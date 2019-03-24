@@ -10,18 +10,18 @@ class App extends StatefulWidget {
 
 class AppState extends State<App> {
   var _currentIndex = 0;
-  // MessagePage message;
+  MessagePage message;
   // Contacts contacts;
   // Personal me;
 
-/*   currentPage() {
+  currentPage() {
     switch (_currentIndex) {
       case 0:
         if (message == null) {
           message = new MessagePage();
         }
         return message;
-      case 1:
+/*       case 1:
         if (contacts == null) {
           contacts = new Contacts();
         }
@@ -30,10 +30,10 @@ class AppState extends State<App> {
         if (me == null) {
           me = new Personal();
         }
-        return me;
+        return me; */
       default:
     }
-  } */
+  }
 
   _popupMenuItem(String title, {String imagePath, IconData icon}) {
     return PopupMenuItem(
@@ -164,7 +164,7 @@ class AppState extends State<App> {
           ),
         ],
       ),
-      // body: currentPage(),
+      body: currentPage(),
     );
   }
 }
