@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './app.dart';
 import './loading.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
-//import './search.dart';
+import './search.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -19,7 +19,7 @@ void main() => runApp(MaterialApp(
       withZoom: true,
       withLocalStorage: true,
     ),
-    // 'search': (BuildContext context) => new Search(),
+    'search': (BuildContext context) => new Search(),
   },
   home: new LoadingPage(),
 ));
@@ -27,6 +27,6 @@ void main() => runApp(MaterialApp(
 // 自定义主题
 final ThemeData mDefaultTheme = new ThemeData(
   primaryColor: Colors.green,
-  scaffoldBackgroundColor: Color(0xFFebeb),
+  scaffoldBackgroundColor: Color(0xFFebebeb),
   cardColor: Colors.green,
 );

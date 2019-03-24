@@ -44,6 +44,8 @@ flutter:
     - images/contact_list_pressed.png
     - images/profile_normal.png
     - images/profile_pressed.png
+    - images/message_pressed.png
+    - images/message_normal.png
     # 菜单按钮
     - images/icon_menu_addfriend.png
     - images/icon_menu_group.png
