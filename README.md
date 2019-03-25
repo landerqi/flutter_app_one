@@ -7,6 +7,7 @@
 |~images
 |~lib
 |--main.dart
+|--app.dart
 |--loading.dart
 |--search.dart
 |--chat
