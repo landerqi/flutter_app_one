@@ -3,7 +3,8 @@
 聊天app
 
 ## code structure
-|~images
+```
+|~images <br>
 |~lib
 |--main.dart
 |--loading.dart
@@ -23,3 +24,4 @@
     |--contacts.dart
 |--personal
     |--personal.dart
+```
