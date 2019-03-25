@@ -4,24 +4,24 @@
 
 ## code structure
 ```
-|~images <br>
+|~images
 |~lib
 |--main.dart
 |--loading.dart
 |--search.dart
 |--chat
-    |--message_data.dart
-    |--message_item.dart
-    |--message_page.dart
+|   |--message_data.dart
+|   |--message_item.dart
+|   |--message_page.dart
 |--common
-    |--im_item.dart
-    |--touch_callback.dart
+|   |--im_item.dart
+|   |--touch_callback.dart
 |--contacts
-    |--contact_header.dart
-    |--contact_item.dart
-    |--contact_sider_list.dart
-    |--contact_vo.dart
-    |--contacts.dart
+|   |--contact_header.dart
+|   |--contact_item.dart
+|   |--contact_sider_list.dart
+|   |--contact_vo.dart
+|   |--contacts.dart
 |--personal
-    |--personal.dart
+|   |--personal.dart
 ```
