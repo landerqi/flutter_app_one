@@ -11,7 +11,7 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   var _currentIndex = 0;
   MessagePage message;
-  // Contacts contacts;
+  Contacts contacts;
   // Personal me;
 
   currentPage() {
@@ -21,12 +21,12 @@ class AppState extends State<App> {
           message = new MessagePage();
         }
         return message;
-/*       case 1:
+      case 1:
         if (contacts == null) {
           contacts = new Contacts();
         }
         return contacts;
-      case 2:
+      /*case 2:
         if (me == null) {
           me = new Personal();
         }
