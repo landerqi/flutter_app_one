@@ -11,10 +11,18 @@ void main() => runApp(MaterialApp(
   // 路由
   routes: <String, WidgetBuilder>{
     'app': (BuildContext context) => new App(),
-    '/friends': (_) => new WebviewScaffold(
-      url: 'https://fluter.io',
+    '/yycom': (_) => new WebviewScaffold(
+      url: 'https://yy.com',
       appBar: new AppBar(
-        title: new Text('Flutter官网'),
+      title: new Text('YY'),
+      ),
+      withZoom: true,
+      withLocalStorage: true,
+    ),
+    '/friends': (_) => new WebviewScaffold(
+      url: 'https://baidu.com',
+      appBar: new AppBar(
+        title: new Text('百度'),
       ),
       withZoom: true,
       withLocalStorage: true,

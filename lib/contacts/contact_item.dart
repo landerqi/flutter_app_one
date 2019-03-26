@@ -17,7 +17,9 @@ class ContactItem extends StatelessWidget {
       ),
       height: 52.0,
       child: FlatButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/friends');
+        },
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[

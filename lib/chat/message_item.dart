@@ -20,6 +20,7 @@ class MessageItem extends StatelessWidget{
       //按下回调处理 空实现
       child: TouchCallBack(
         onPressed: (){
+          Navigator.pushNamed(context, '/yycom');
         },
         //整体水平方向布局
         child: Row(

@@ -12,7 +12,7 @@ class AppState extends State<App> {
   var _currentIndex = 0;
   MessagePage message;
   Contacts contacts;
-  // Personal me;
+  Personal me;
 
   currentPage() {
     switch (_currentIndex) {
@@ -26,11 +26,11 @@ class AppState extends State<App> {
           contacts = new Contacts();
         }
         return contacts;
-      /*case 2:
+      case 2:
         if (me == null) {
           me = new Personal();
         }
-        return me; */
+        return me;
       default:
     }
   }
