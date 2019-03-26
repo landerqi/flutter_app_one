@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import './chat/message_page.dart';
 import './contacts/contacts.dart';
 import './personal/personal.dart';
@@ -37,31 +38,44 @@ class AppState extends State<App> {
 
   _popupMenuItem(String title, {String imagePath, IconData icon}) {
     return PopupMenuItem(
-      child: Row(
-        children: <Widget>[
-          imagePath != null ? Image.asset(
-            imagePath,
-            width: 32.0,
-            height: 32.0,
-          )
-          : SizedBox(
-            width: 32.0,
-            height: 32.0,
-            child: Icon(
-              icon,
-              color: Colors.white,
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.only(left: 20.0),
-            child: Text(
-              title,
-              style: TextStyle(
-                color: Colors.white
+      child: GestureDetector(
+        onTap: () {
+          Fluttertoast.showToast(
+            msg: '想啥呢！...',
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIos: 1,
+            backgroundColor: Colors.black,
+            textColor: Colors.white,
+            fontSize: 16.0
+          );
+        },
+        child: Row(
+          children: <Widget>[
+            imagePath != null ? Image.asset(
+              imagePath,
+              width: 32.0,
+              height: 32.0,
+            )
+            : SizedBox(
+              width: 32.0,
+              height: 32.0,
+              child: Icon(
+                icon,
+                color: Colors.white,
               ),
             ),
-          ),
-        ],
+            Container(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Text(
+                title,
+                style: TextStyle(
+                  color: Colors.white
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

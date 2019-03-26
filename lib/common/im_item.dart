@@ -16,9 +16,17 @@ class ImItem extends StatelessWidget {
           case '好友动态':
             Navigator.pushNamed(context, '/friends');
             break;
-          case '联系客服':
-            break;
           default:
+          Scaffold.of(context).showSnackBar(new SnackBar(
+            content: new Container(
+              child: new Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  new Text('敬请期待...'),
+                ],
+              ),
+            ),
+          ));
         }
       },
       child: Container(
