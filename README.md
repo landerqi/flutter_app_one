@@ -1,6 +1,12 @@
 # flutter_app_one
 
-聊天app
+此项目主要是用来学习flutter练手的纯UI项目，他是一个聊天app，通过这个app的ui编写，熟悉掌握了flutter大部分的布局方式。
+> 主要包含loading页，搜索页，聊天消息列表页，好友列表页及我的页面。
+
+## 真机体验
+安卓：下载apk目录中的安装包。
+
+## app演示视频
 
 ## code structure
 ```
