@@ -7,6 +7,7 @@
 安卓：下载apk目录中的安装包。
 
 ## app演示视频
+https://share.weiyun.com/5i3pvZ9
 
 ## code structure
 ```
